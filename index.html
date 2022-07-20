@@ -20,9 +20,7 @@
             <li>
                 <div class="column">
                     <h2>Nuevo Tiempo</h2>
-                         <video id="video"></video>
-
-                         <video width="352" height="198" controls>
+                            <video width="200" height="98" controls>
                             <source src="https://stream.live.novotempo.com/radio/smil:rntLimaPE.smil/playlist.m3u8" type="application/x-mpegURL">
                         </video>
 
@@ -73,18 +71,7 @@
             </div>
      
         
-        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-        <script>
-            if(Hls.isSupported()) {
-              var video = document.getElementById('video');
-              var hls = new Hls();
-              hls.loadSource('https://stream.live.novotempo.com/radio/smil:rntLimaPE.smil/playlist.m3u8');
-              hls.attachMedia(video);
-              hls.on(Hls.Events.MANIFEST_PARSED,function() {
-                video.stop();
-            });
-           }
-        </script>
+        
 
 
 
