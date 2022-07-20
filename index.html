@@ -21,6 +21,11 @@
                 <div class="column">
                     <h2>Nuevo Tiempo</h2>
                          <video id="video"></video>
+
+                         <video width="352" height="198" controls>
+                            <source src="https://stream.live.novotempo.com/radio/smil:rntLimaPE.smil/playlist.m3u8" type="application/x-mpegURL">
+                        </video>
+
                          <br><a href="https://cdn.jwplayer.com/players/vW9mB8fi-QGPbMZjv.html" target="_blank">Si no hace PLAY, ingresa desde aquí</a></h2>
 
 
@@ -73,10 +78,10 @@
             if(Hls.isSupported()) {
               var video = document.getElementById('video');
               var hls = new Hls();
-              hls.loadSource('https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
+              hls.loadSource('https://stream.live.novotempo.com/radio/smil:rntLimaPE.smil/playlist.m3u8');
               hls.attachMedia(video);
               hls.on(Hls.Events.MANIFEST_PARSED,function() {
-                video.play();
+                video.stop();
             });
            }
         </script>
