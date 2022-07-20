@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Radio Stations</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Radio Stations</h1>
+        <p></p>
+    </div>
+    <div class="row">
+
+        <ul>
+            <li>
+                <div class="column">
+                    <h2>Nuevo Tiempo</h2>
+                         <video id="video"></video>
+                         <br><a href="https://cdn.jwplayer.com/players/vW9mB8fi-QGPbMZjv.html" target="_blank">Si no hace PLAY, ingresa desde aquí</a></h2>
+
+
+                </div>
+
+            </li>
+            <li>
+                <div class="column">
+                    <h2>3ABN Latino</h2>
+                    <audio controls>
+                        <source src="https://war.streamguys1.com:7185/Latino" type="audio/mpeg">
+                    </audio>
+
+                   
+
+                </div>
+            </li>
+            <li>
+                <div class="column">
+                    <h2>RPP Noticias</h2>
+                    <audio controls>
+                        <source src="https://mdstrm.com/audio/5fab3416b5f9ef165cfab6e9/icecast.audio" type="audio/mpeg">
+                    </audio>
+
+                   
+
+                </div>
+            </li>
+            <li>
+                <div class="column">
+                    <h2>Exitosa Noticias</h2>
+
+                    <audio controls>
+                        <source src="https://7.innovatestream.pe:2020/stream/exitosaoficial/stream" type="audio/mpeg">
+                    </audio>
+            </div>
+            </li>
+        </ul>
+     
+            <div class="footer">
+                <h2>Copyright&copy 2022 VD7 Sofware&Design</h2>
+            </div>
+     
+        
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+        <script>
+            if(Hls.isSupported()) {
+              var video = document.getElementById('video');
+              var hls = new Hls();
+              hls.loadSource('https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED,function() {
+                video.play();
+            });
+           }
+        </script>
+
+
+
+</body>
+
+</html>
