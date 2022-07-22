@@ -8,7 +8,7 @@
     margin: 0;
   }
   
-  .footer h2 {
+  .footer h2{
     font-size:13px;
     font-family: 'Palatino', 'Century Gothic';
   }
@@ -22,7 +22,7 @@
   }
   
   /* Increase the font size of the heading */
-  .header h1 {
+  .header{
     font-size: 30px;
   }
   
@@ -166,11 +166,22 @@
 
 .responsive {
   width: 100%;
-  max-width: 100px;
+  max-width: 200px;
   height: auto;
 }
 .responsiveRadioLogo {
   width: 100%;
   max-width: 400px;
   height: auto;
+}
+
+.linkText{
+  font-size: 13px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.playStyle{
+border: 1px solid rgb(133, 132, 132);
+border-radius: 5px;
+padding: 8px;
+margin: 0px 0 0 0;
 }
