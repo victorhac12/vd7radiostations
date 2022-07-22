@@ -10,64 +10,90 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>Radio Stations</h1>
+    <div class="header ">
+        <img src="img/radiologo.png" alt="RadioLogo" class="responsiveRadioLogo">
+        Radio Stations
         <p></p>
     </div>
-    <div class="row">
+    <div class="container">
+ 
+                <div class="border">
 
-        <ul>
-            <li>
-                <div class="column">
-                    <h2>Nuevo Tiempo</h2>
-                        <video width="200" height="98" controls>
-                            <source src="https://stream.live.novotempo.com/radio/smil:rntLimaPE.smil/playlist.m3u8" type="application/x-mpegURL">
-                        </video>
+                    <table>
+                        <tr>
+                          <th> <img src="img/nuevotiempo.png" alt="NuevoTiempo" class="responsive"></th>
+                          <th>
+                            <video id="videoNuevoTiempo" width="200" height="98" controls>
+                                <source src="https://stream.live.novotempo.com/radio/smil:rntLimaPE.smil/playlist.m3u8" type="application/x-mpegURL">
+                            </video>
+    
+                             <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://cdn.jwplayer.com/players/vW9mB8fi-QGPbMZjv.html" target="_blank">Si no hace PLAY, ingresa desde aquí</a></h2>
+                          
 
-                         <br><a href="https://cdn.jwplayer.com/players/vW9mB8fi-QGPbMZjv.html" target="_blank">Si no hace PLAY, ingresa desde aquí</a></h2>
 
+
+                          </th>
+                         
+                        </tr>
+                      </table>
+
+                      
 
                 </div>
 
-            </li>
-            <li>
-                <div class="column">
-                    <h2>3ABN Latino</h2>
-                    <audio controls>
+                <div class="border">
+                    <table>
+                        <tr>
+                          <th> <img src="img/3abnlatino.png" alt="3abnlatino" class="responsive"></th>
+                          <th>
+                    
+                            &nbsp;&nbsp;&nbsp;
+                    <audio id="audio3abn" controls>
                         <source src="https://war.streamguys1.com:7185/Latino" type="audio/mpeg">
                     </audio>
 
-                   
+                </th>
+                         
+            </tr>
+          </table>
 
                 </div>
-            </li>
-            <li>
-                <div class="column">
-                    <h2>RPP Noticias</h2>
-                    <audio controls>
+                <div class="border">
+                    <table>
+                        <tr>
+                          <th> <img src="img/rpp.png" alt="RPPNoticias" class="responsive"></th>
+                          <th>
+                            &nbsp;&nbsp;&nbsp;
+                    <audio id="audioRPP" controls>
                         <source src="https://mdstrm.com/audio/5fab3416b5f9ef165cfab6e9/icecast.audio" type="audio/mpeg">
                     </audio>
-
+                </th>
+                         
+            </tr>
+          </table>
                    
 
                 </div>
-            </li>
-            <li>
-                <div class="column">
-                    <h2>Exitosa Noticias</h2>
-                     <audio controls>
+           <div class="border">
+            <table>
+                <tr>
+                  <th> <img src="img/exitosa.png" alt="ExitosaNoticias" class="responsive"></th>
+                  <th>
+                    &nbsp;&nbsp;&nbsp;
+                     <audio id="audioExitosa" controls>
                         <source src="https://7.innovatestream.pe:2020/stream/exitosaoficial/stream.mp3" type="audio/mp3">
                     </audio>
-
+                </th>
+                         
+            </tr>
+          </table>
                     
             </div>
-            </li>
-        </ul>
+   
      <br>
      <br>
      <br>
-     
-            <div class="footer">
+               <div class="footer">
                 <h2>Copyright&copy 2022 VD7 Sofware&Design</h2>
             </div>
      
@@ -75,7 +101,7 @@
         
 
 
-
+            <script src="js/util.js"></script>
 </body>
 
 </html>

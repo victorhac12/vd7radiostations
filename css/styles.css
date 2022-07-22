@@ -9,15 +9,16 @@
   }
   
   .footer h2 {
-    font-size:15px;
-    font-family:  Arial, Helvetica, sans-serif;
+    font-size:13px;
+    font-family: 'Palatino', 'Century Gothic';
   }
   /* Header/logo Title */
   .header {
     padding: 20px;
     text-align: center;
-    background: #1a6ebc;
+    background: #1a5d86;
     color: white;
+    font-size: 40px;
   }
   
   /* Increase the font size of the heading */
@@ -84,7 +85,7 @@
     -ms-flex: 70%; /* IE10 */
     flex: 70%;
     background-color: white;
-    padding: 20px;
+    padding: 60px;
   }
   
   /* Fake image, just for this example */
@@ -100,22 +101,76 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(173, 174, 175);
-    color: rgb(40, 39, 39);
+    background-color: #0d3046 ;
+    color: rgb(211, 201, 201);
     text-align: center;
   }
   
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
-    .row {   
-      flex-direction: column;
-    }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-    }
-  }
+ .stations-list {
+    margin: 0 0 32px 0;
+    padding: 0;
+    list-style: none;
+    text-indent: 0;
+    position: relative;
+}
+
+.stations__station {
+  margin: -1px 0 0 0;
+  position: relative;
+  transition: .35s;
+  padding: 13px 64px 16px 192px;
+}
+
+.container {
+
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-items: start;
+
+}
+
+.item{
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+  background-color: rgb(255, 255, 255);
+}
+
+.border{
+  border: 1px solid rgb(133, 132, 132);
+  border-radius: 5px;
+  padding: 8px;
+  transition: 0.3s;
+  font-size: 16px;
+  margin: 0px 0 0 0;
+}
+
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.border:hover {
+  background-color: #c8d7e0;
+  color: #0d3046;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+.responsiveRadioLogo {
+  width: 60%;
+  max-width: 50px;
+  height: auto;
+}
