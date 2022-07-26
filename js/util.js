@@ -191,22 +191,22 @@ let browVersion;
 console.log(userAgent);
 if (userAgent.includes('Firefox/')) {
   console.log(`Firefox v${userAgent.split('Firefox/')[1]}`)
-  window.location.href = "/newbrowradio.html";
+  window.location.href = "newbrowradio.html";
 } else if (userAgent.includes('Edg/')) {
   console.log(`Edg v${userAgent.split('Edg/')[1]}`)
-  window.location.href = "/newbrowradio.html";
+  window.location.href = "newbrowradio.html";
   
 } else if (userAgent.includes('Chrome/')) {
   console.log(`Chrome v${userAgent.split('Chrome/')[1]}`)
-  window.location.href = "/newbrowradio.html";
+  window.location.href = "newbrowradio.html";
 } else if (userAgent.includes('Safari/')) {
   // Safari
   browVersion = userAgent.split('Safari/')[1];
   console.log(browVersion);
   if (browVersion.includes("7.")){
-    window.location.href = "/oldbrowradio.html";
+    window.location.href = "oldbrowradio.html";
   }else{
-    window.location.href = "/newbrowradio.html";
+    window.location.href = "newbrowradio.html";
   }
 
 }
