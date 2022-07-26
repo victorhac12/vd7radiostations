@@ -211,6 +211,7 @@ if (userAgent.includes('Firefox/')) {
 
 }
 
+return false;
 }
 
 function myFunction() {
