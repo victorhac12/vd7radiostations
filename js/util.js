@@ -215,6 +215,5 @@ return false;
 }
 
 function redirectUrl() {
-	window.location.href = "oldbrowradio.html";
-	return false;
+	alert("Holllllaaaaaaaaa");
 }
