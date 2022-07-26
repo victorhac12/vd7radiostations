@@ -195,6 +195,7 @@ if (userAgent.includes('Firefox/')) {
 } else if (userAgent.includes('Edg/')) {
   console.log(`Edg v${userAgent.split('Edg/')[1]}`)
   window.location.href = "/newbrowradio.html";
+  
 } else if (userAgent.includes('Chrome/')) {
   console.log(`Chrome v${userAgent.split('Chrome/')[1]}`)
   window.location.href = "/newbrowradio.html";
@@ -210,4 +211,8 @@ if (userAgent.includes('Firefox/')) {
 
 }
 
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = navigator.userAgent;
 }
