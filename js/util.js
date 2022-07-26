@@ -214,8 +214,7 @@ if (userAgent.includes('Firefox/')) {
 return false;
 }
 
-function myFunction() {
-  alert(document.getElementById("demo").innerText = navigator.appVersion);
-  document.getElementById("demo").innerText = navigator.appVersion;
-
+function redirectUrl() {
+	window.location.href = "oldbrowradio.html";
+	return false;
 }

@@ -230,3 +230,19 @@ p::after{
   border-radius: 8px;
 
 }
+
+.button_oldversion{
+  background-color: #db2e2e;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+
+}
