@@ -1,41 +1,66 @@
+let stationNuevoTiempoPeru = document.getElementById("audiontperu");
+let station3abn = document.getElementById("audio3abn");
+let stationRPP = document.getElementById("audioRPP");
+let stationExitosa = document.getElementById("audioExitosa");
+let btnpause3abn = document.getElementById("btnpause3abn");
 
-let stationsList = document.getElementById("stationsList");
+let allowPlay = true
+let audio;
+let video;
+let stationValues;
 
-function activarAudio(stationList){
+function createAudio(stationValues){
 
-    let stationElement = document.querySelector(stationList);
-    stationElement.play();
-    /*
-    stationElement.addEventListener('play', (event) => {
-        console.log('The Boolean paused property is now false. Either the ' +
-        'play() method was called or the autoplay attribute was toggled.');
-      });
+  if (allowPlay){
+  audio = document.createElement('audio');
+  audio.src = stationValues.getAttribute("stream");
+  audio.setAttribute('type',stationValues.getAttribute("streamtype"));
+  audio.setAttribute('id', stationValues.getAttribute("id"));
+  audio.volume = 0.8;
+  console.log(stationValues.getAttribute("stream"));
+  console.log(stationValues.getAttribute("streamtype"));
+  allowPlay = false;
+  playAudio();
+ 
+ }
 
-      */
 }
-// This handler will be executed only once when the cursor
-// moves over the unordered list
-/*
-stationsList.addEventListener("mouseenter", function( event ) {
-  // highlight the mouseenter target
-  event.target.style.color = "purple";
 
-  // reset the color after a short delay
-  setTimeout(function() {
-    event.target.style.color = "";
-  }, 500);
-}, false);
-*/
-// This handler will be executed every time the cursor
-// is moved over a different list item
-/*
-stationsList.addEventListener("mouseover", function( event ) {
-  // highlight the mouseover target
-  event.target.style.color = "orange";
+function playAudio(){
+     audio.play();
+ 
+}
 
-  // reset the color after a short delay
-  setTimeout(function() {
-    event.target.style.color = "";
-  }, 500);
-}, false);
-*/
+
+function pauseAudio(){
+    audio.pause();
+    allowPlay = true;
+
+}
+
+function createVideo(stationValues){
+
+  if (allowPlay){
+  video = document.createElement('video');
+  video.src = stationValues.getAttribute("stream");
+  video.setAttribute('type',stationValues.getAttribute("streamtype"));
+  video.setAttribute('id', stationValues.getAttribute("id"));
+  video.volume = 0.8;
+  console.log(stationValues.getAttribute("stream"));
+  console.log(stationValues.getAttribute("streamtype"));
+  allowPlay = false;
+  playVideo();
+ 
+ }
+ 
+}
+function playVideo(){
+  video.play();
+
+}
+
+function pauseVideo(){
+ video.pause();
+ allowPlay = true;
+
+}

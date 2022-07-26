@@ -185,3 +185,48 @@ border-radius: 5px;
 padding: 8px;
 margin: 0px 0 0 0;
 }
+
+p{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+p::after{
+  display: inline-block;
+  content: attr(data-file);
+  
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: rgba(243, 23, 23, 0.5);
+}
+
+.button_play {
+  background-color: #f22a0b;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  
+}
+
+.button_pause {
+  background-color: #585858;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+
+}

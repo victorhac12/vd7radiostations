@@ -27,7 +27,9 @@
     
                              <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://cdn.jwplayer.com/players/vW9mB8fi-QGPbMZjv.html" target="_blank" class="linkText">Si no hace PLAY, ingresa desde aquí</a>
                           
-
+                             <button id ="audioRPP" class="button_play" stream="https://stream.live.novotempo.com/radio/smil:rntLimaPE.smil/playlist.m3u8" streamtype="application/x-mpegURL" onclick="createVideo(this)">PLAY</button>
+                             &nbsp; <button id="btnpauseNTPeru" name="btnpause" onclick="pauseVideo()" class="button_pause">PAUSA</button>
+                         
 
 
                           </th>
@@ -46,9 +48,9 @@
                           <th>
                     
                             &nbsp;&nbsp;&nbsp;
-                    <audio id="audio3abn" controls>
-                        <source src="https://war.streamguys1.com:7185/Latino" type="audio/mpeg">
-                    </audio>
+                     <button id ="audio3abn" class="button_play" stream="https://war.streamguys1.com:7185/Latino" streamtype="audio/mpeg" onclick="createAudio(this)">PLAY</button>
+                     &nbsp; <button id="btnpause3abn" name="btnpause" onclick="pauseAudio()" class="button_pause">PAUSA</button>
+                   
 
                 </th>
                          
@@ -62,9 +64,9 @@
                           <th> <img src="img/rpp.png" alt="RPPNoticias" class="responsive"></th>
                           <th>
                             &nbsp;&nbsp;&nbsp;
-                    <audio id="audioRPP" controls>
-                        <source src="https://mdstrm.com/audio/5fab3416b5f9ef165cfab6e9/icecast.audio" type="audio/mpeg">
-                    </audio>
+                   <button id ="audioRPP" class="button_play" stream="https://mdstrm.com/audio/5fab3416b5f9ef165cfab6e9/icecast.audio" streamtype="audio/mpeg" onclick="createAudio(this)">PLAY</button>
+                    &nbsp; <button id="btnpauseRPP" name="btnpause" onclick="pauseAudio()" class="button_pause">PAUSA</button>
+                  
                 </th>
                          
             </tr>
@@ -78,9 +80,8 @@
                   <th> <img src="img/exitosa.png" alt="ExitosaNoticias" class="responsive"></th>
                   <th>
                     &nbsp;&nbsp;&nbsp;
-                     <audio id="audioExitosa" controls>
-                        <source src="https://7.innovatestream.pe:2020/stream/exitosaoficial/stream.mp3" type="audio/mp3">
-                    </audio>
+                    <button id ="audioRPP" class="button_play" stream="https://7.innovatestream.pe:2020/stream/exitosaoficial/stream.mp3" streamtype="audio/mp3" onclick="createAudio(this)">PLAY</button>
+                    &nbsp; <button id="btnpauseExitosa" name="btnpause" onclick="pauseAudio()" class="button_pause">PAUSA</button>
                 </th>
                          
             </tr>
