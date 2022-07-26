@@ -215,5 +215,5 @@ return false;
 }
 
 function myFunction() {
-  document.getElementById("demo").innerHTML = navigator.userAgent;
+  document.getElementById("demo").innerHTML = navigator.appVersion;
 }
