@@ -19,6 +19,7 @@
     background: #1a5d86;
     color: white;
     font-size: 35px;
+    position: relative;
   }
   
   /* Increase the font size of the heading */
@@ -200,7 +201,7 @@ p::after{
 }
 
 .button_play {
-  background-color: #f22a0b;
+  background-color: #169454;
   border: none;
   color: white;
   padding: 10px 22px;
@@ -231,18 +232,11 @@ p::after{
 
 }
 
-.button_oldversion{
-  background-color: #db2e2e;
-  border: none;
-  color: white;
-  padding: 10px 22px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size:medium;
+  font-weight: 500px;
+  color: #edb424;
 }

@@ -1,12 +1,15 @@
 let stationNuevoTiempoPeru = document.getElementById("audioNTPeru");
 let station3abn = document.getElementById("audio3abn");
+let station3abnEN = document.getElementById("audio3abnEN");
 let stationRPP = document.getElementById("audioRPP");
 let stationExitosa = document.getElementById("audioExitosa");
 
 let btnpauseNTPeru = document.getElementById("btnpauseNTPeru");
 let btnpause3abn = document.getElementById("btnpause3abn");
+let btnpause3abnEN = document.getElementById("btnpause3abnEN");
 let btnpauseRPP = document.getElementById("btnpauseRPP");
 let btnpauseExitosa = document.getElementById("btnpauseExitosa");
+
 
 let allowPlay = true
 let audio;
@@ -111,6 +114,8 @@ function hideButtonPlay(idValue){
 		btnpauseNTPeru.style.display = "block";
 	} else if (idPlaybtn == "audio3abn"){
 		btnpause3abn.style.display = "block";
+	} else if (idPlaybtn == "audio3abnEN"){
+		btnpause3abnEN.style.display = "block";
 	} else if (idPlaybtn == "audioRPP") {
 		btnpauseRPP.style.display = "block";
 	} else if (idPlaybtn == "audioExitosa") {
