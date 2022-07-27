@@ -24,6 +24,26 @@ const btnpauseElements = document.getElementsByClassName("button_pause");
 	}
 //
 
+function hideAllBtnPlay(){
+
+	const btnplayElements = document.getElementsByClassName("button_play");
+	
+	for( const btnplayElement of btnplayElements){
+		btnplayElement.style.display = "none";    
+    	  
+	}
+
+}
+function showAllBtnPlay(){
+
+	const btnplayElements = document.getElementsByClassName("button_play");
+	
+	for( const btnplayElement of btnplayElements){
+		btnplayElement.style.display = "block";    
+    	  
+	}
+
+}
 
 function createAudio(stationValues){
 
@@ -96,7 +116,7 @@ function hideButtonPlay(idValue){
 	} else if (idPlaybtn == "audioExitosa") {
 		btnpauseExitosa.style.display = "block";
 	}
-
+	hideAllBtnPlay();
 }
 
 function showButtonPlay(idValue){
@@ -105,7 +125,7 @@ function showButtonPlay(idValue){
 	pausebtnValue.style.display = "none";
 	let showPlayButton = document.getElementById(idPlaybtn);
 	showPlayButton.style.display ="block";
-
+	showAllBtnPlay();
 }
 
 
