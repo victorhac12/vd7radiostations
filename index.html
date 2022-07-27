@@ -19,11 +19,11 @@
 
                     <table>
                         <tr>
-                          <th> <img src="img/nuevotiempo.png" alt="NuevoTiempo" class="responsive"></th>
+                          <th width="115px"> <img src="img/nuevotiempo.png" alt="NuevoTiempo" class="responsive"></th>
                           <th>
-                            &nbsp;&nbsp;
-                             <button id ="audioRPP" class="button_play" stream="https://stream.live.novotempo.com/radio/smil:rntLimaPE.smil/playlist.m3u8" streamtype="application/x-mpegURL" onclick="createVideo(this)">PLAY</button>
-                             &nbsp; <button id="btnpauseNTPeru" name="btnpause" onclick="pauseVideo()" class="button_pause">PAUSA</button>
+                            
+                             <button id ="audioNTPeru" class="button_play" stream="https://stream.live.novotempo.com/radio/smil:rntLimaPE.smil/playlist.m3u8" streamtype="application/x-mpegURL" onclick="createVideo(this); hideButtonPlay(this)">PLAY</button>
+                             <button id="btnpauseNTPeru" name="btnpause" onclick="pauseVideo(); showButtonPlay(this)" class="button_pause">PAUSA</button>
                          
 
 
@@ -39,12 +39,10 @@
                 <div class="border">
                     <table>
                         <tr>
-                          <th> <img src="img/3abnlatino.png" alt="3abnlatino" class="responsive"></th>
+                          <th width="115px"> <img src="img/3abnlatino.png" alt="3abnlatino" class="responsive"></th>
                           <th>
-                    
-                            &nbsp;&nbsp;
-                     <button id ="audio3abn" class="button_play" stream="https://war.streamguys1.com:7185/Latino" streamtype="audio/mpeg" onclick="createAudio(this)">PLAY</button>
-                     &nbsp; <button id="btnpause3abn" name="btnpause" onclick="pauseAudio()" class="button_pause">PAUSA</button>
+                     <button id ="audio3abn" class="button_play" stream="https://war.streamguys1.com:7185/Latino" streamtype="audio/mpeg" onclick="createAudio(this); hideButtonPlay(this)">PLAY</button>
+                     <button id="btnpause3abn" name="btnpause" onclick="pauseAudio(); showButtonPlay(this)" class="button_pause">PAUSA</button>
                    
 
                 </th>
@@ -56,11 +54,10 @@
                 <div class="border">
                     <table>
                         <tr>
-                          <th> <img src="img/rpp.png" alt="RPPNoticias" class="responsive"></th>
+                          <th width="115px"> <img src="img/rpp.png" alt="RPPNoticias" class="responsive"></th>
                           <th>
-                            &nbsp;&nbsp;
-                   <button id ="audioRPP" class="button_play" stream="https://mdstrm.com/audio/5fab3416b5f9ef165cfab6e9/icecast.audio" streamtype="audio/mpeg" onclick="createAudio(this)">PLAY</button>
-                    &nbsp; <button id="btnpauseRPP" name="btnpause" onclick="pauseAudio()" class="button_pause">PAUSA</button>
+                   <button id ="audioRPP" class="button_play" stream="https://mdstrm.com/audio/5fab3416b5f9ef165cfab6e9/icecast.audio" streamtype="audio/mpeg" onclick="createAudio(this); hideButtonPlay(this)">PLAY</button>
+                  <button id="btnpauseRPP" name="btnpause" onclick="pauseAudio(); showButtonPlay(this)" class="button_pause">PAUSA</button>
                   
                 </th>
                          
@@ -72,11 +69,10 @@
            <div class="border">
             <table>
                 <tr>
-                  <th> <img src="img/exitosa.png" alt="ExitosaNoticias" class="responsive"></th>
+                  <th width="115px"><img src="img/exitosa.png" alt="ExitosaNoticias" class="responsive"></th>
                   <th>
-                    &nbsp;&nbsp;
-                    <button id ="audioRPP" class="button_play" stream="https://7.innovatestream.pe:2020/stream/exitosaoficial/stream.mp3" streamtype="audio/mp3" onclick="createAudio(this)">PLAY</button>
-                    &nbsp; <button id="btnpauseExitosa" name="btnpause" onclick="pauseAudio()" class="button_pause">PAUSA</button>
+                    <button id ="audioExitosa" class="button_play" stream="https://7.innovatestream.pe:2020/stream/exitosaoficial/stream.mp3" streamtype="audio/mp3" onclick="createAudio(this); hideButtonPlay(this)">PLAY</button>
+                    <button id="btnpauseExitosa" name="btnpause" onclick="pauseAudio(); showButtonPlay(this)" class="button_pause">PAUSA</button>
                 </th>
                          
             </tr>
